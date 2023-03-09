@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  
+}
+h1{
+  color:#13005A;
+}
+#container {
+  
+  width: 700px;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 30px;
+  background-color:#FFFBF5;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#container input{
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  background-color: whitesmoke;
+  font-weight: bold;
+
+  border-radius: 10px;
+  height: 6vh;
+}
+ul{
+  
+  background-color: #D6E4E5;
+  list-style-type: none;
+  margin: 0;
+  padding: 5px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  border-radius: 15px;
+  /* border: 1px solid #e5e5e5; */
+}
+ul li {
+  background-color: #DDDDDD;
+  border-radius: 15px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* padding-left: 0; */
+  display: flex;
+  justify-content: space-between;
+  align-items: inherit;
+  align-items: center;
+ 
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+ul li:hover {
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  background: #f3f3f3;
+}
+#list input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+#list label {
+  position: relative;
+  cursor: pointer;
+}
+
+#list label:before {
+  content:'';
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 2px solid #0079bf;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 10px;
+}
+#list input:checked + label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 9px;
+  width: 6px;
+  height: 14px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+#list input:checked + label:before {
+  background: #0079bf;
+} 
+#list input:checked + label {
+  text-decoration: line-through;
+}
+.delete {
+  height: 50px;
+    padding: 5px 0px;
+    border-radius: 3px;
+}
+.delete:hover {
+  background: #f2f2f2;
+  cursor: pointer;
+}
+h1 {
+  text-align: center;
+}
+.add-task {
+  width: 100%;
+    outline: none;
+    font-size: 15px;
+    padding: 11px;
+    border: 1px solid #f3f3f3;
+    margin-bottom: 3px;
+}
+#total-tasks {
+  font-size: 20px;
+    margin-left: 2px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: black;
+}
+.mantain{
+  position: relative;
+}
+.oppos{
+  position: absolute;
+  top: 10px;
+   left: 590px;
+}
