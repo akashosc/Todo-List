@@ -123,6 +123,7 @@ function addonclick(){
          
     if(!text){
        showNotification('This input can not be added');
+       return ;
     }
     const task={
        title:text,
